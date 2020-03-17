@@ -1,0 +1,45 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.meal-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+.meal-list {
+  position: absolute;
+  left: 2vw;
+  width: 100%;
+  height: 80%;
+}
+
+.meal-list-item {
+  border: 0.3px solid black;
+}
+
+.meal-form {
+  position: absolute;
+  top: 5vh;
+  height: 70%;
+  right: 10vw;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-content: right;
+  justify-content: space-between;
+}
+
+.meal-form-item {
+  width: 100%;
+  margin-bottom: 2vh;
+}
