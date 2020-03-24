@@ -16,8 +16,6 @@ services:
     ports:
       - 3000:3000
       - 35729:35729
-    environment:
-      - "API_URL=http://localhost:8000"
     
   postgres:
       image: postgres:10-alpine

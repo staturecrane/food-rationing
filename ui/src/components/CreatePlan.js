@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-function CreateMeal(props) {
+function CreatePlan(props) {
     const classes = useStyles();
 
     return (
@@ -23,9 +23,9 @@ function CreateMeal(props) {
                 startIcon={<Icon>add</Icon>}
                 onClick={() => props.handleClick(true)}
             >
-                Add Meal
+                Create Plan
             </Button>
-            {props.mealStarted ?
+            {props.planStarted ?
                 <Button
                     variant="contained"
                     color="secondary"
@@ -33,7 +33,7 @@ function CreateMeal(props) {
                     startIcon={<Icon>clear</Icon>}
                     onClick={() => props.handleClick(false)}
                 >
-                    Cancel Meal
+                    Cancel Plan
                 </Button> : ''
             }
 
@@ -41,4 +41,4 @@ function CreateMeal(props) {
     );
 }
 
-export default CreateMeal;
+export default CreatePlan;

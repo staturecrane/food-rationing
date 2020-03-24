@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 
 
-function Header(props) {
+function MealForm(props) {
     return (
         <div className="meal-form">
             <TextField
@@ -49,6 +49,13 @@ function Header(props) {
                 variant="outlined"
                 onChange={e => props.updateMealData("servings", e.target.value)}
             />
+            <TextField
+                className="meal-form-item"
+                id="outlined-basic"
+                label="Quantity"
+                variant="outlined"
+                onChange={e => props.updateMealData("quantity", e.target.value)}
+            />
             <Button
                 variant="outlined"
                 color="primary"
@@ -60,4 +67,4 @@ function Header(props) {
     )
 }
 
-export default Header;
+export default MealForm;
